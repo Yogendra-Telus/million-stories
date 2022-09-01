@@ -1,0 +1,126 @@
+.app-footer {
+	background: $app-darker-gray;
+	display: flex;
+	background-size: 100%;
+	padding: 1.6875rem 2.8125rem 2.375rem;
+	justify-content: space-between;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	color: $app-dark-gray;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		height: 0.3125rem;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-image: linear-gradient(
+			to right,
+			#12a4db 12.5%,
+			#20a885 12.5%,
+			#20a885 25%,
+			#9cc744 25%,
+			#9cc744 37.5%,
+			#f3662a 37.5%,
+			#f3662a 50%,
+			#f9ac2a 50%,
+			#f9ac2a 62.5%,
+			#de1c32 62.5%,
+			#de1c32 75%,
+			#b24595 75%,
+			#b24595 87.5%,
+			#5469ab 87.5%,
+			#5469ab 100%
+		);
+	}
+	@media screen and (max-width: 840px) {
+		background: $app-darker-gray;
+		flex-direction: column;
+		padding: 2.5rem 0 1.125rem;
+	}
+	.social-links-section {
+		flex-direction: row;
+		@media screen and (max-width: 840px) {
+			flex-direction: column;
+		}
+		.footer-socail-icon {
+			margin-left: 4.125rem;
+			width: 8.4375rem;
+			@media screen and (min-width: 850px) and (max-width: 1024px) {
+				margin-left: 1.875rem;
+			}
+			.social-link {
+				display: inline-block;
+				margin-left: 0.75rem;
+				span {
+					position: relative;
+					top: 0.3125rem;
+					color: $app-white;
+					font-size: 1.625rem;
+				}
+				&:first-child {
+					margin: 0;
+				}
+			}
+			.footer-logo {
+				margin: 0 0 2.125rem;
+			}
+			@media screen and (max-width: 840px) {
+				margin: 1.3125rem 0 1.8125rem;
+			}
+		}
+	}
+	.app-footer-links {
+		font-size: 0.875rem;
+		justify-content: space-between;
+		a,
+		button {
+			background: none;
+			border: 0;
+			outline: none;
+			color: $app-white;
+			text-decoration: none;
+			margin-left: 1.25rem;
+			padding: 0;
+			font-family: $font-family-AvertaPE;
+			&:hover {
+				color: $app-lightnew-gray;
+			}
+			@media screen and (min-width: 850px) and (max-width: 1024px) {
+				margin-left: 0.625rem;
+			}
+		}
+		@media screen and (max-width: 840px) {
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			a,
+			button {
+				margin: 0;
+				line-height: 1.4;
+				font-size: 1.25rem;
+			}
+		}
+	}
+	.copy-right {
+		font-size: 0.75rem;
+		margin-top: 3.75rem;
+		text-align: center;
+		font-family: $font-family-AvertaPE;
+		color: #a7a9ac; // Need to add this in variables
+		position: absolute;
+		bottom: 1.125rem;
+		right: 2.8125rem;
+		@media screen and (max-width: 840px) {
+			margin-top: 2.875rem;
+			margin-bottom: 2.1875rem;
+			position: static;
+		}
+		a {
+			color: #10a2dd;
+		}
+	}
+}

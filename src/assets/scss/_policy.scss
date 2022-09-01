@@ -1,0 +1,37 @@
+.policywrapper {
+	position: relative;
+	padding: 8.25rem 0 0 0;
+	background: $app-white;
+	@media screen and (max-width: 768px), 
+	screen and (device-width: 812px) and (orientation:landscape) {
+		padding-top: 5.625rem;
+	}
+	.policy_content {
+		background: $app-white;
+		color: $app-darker-gray;
+		padding-bottom: 2.9375rem;
+		.container{
+			max-width: 100%;
+			padding: 0 2.8125rem;
+		}
+		h4 {
+			font-family: $font-family-AvertaPEBlack;
+			font-size: 1.5rem;
+			line-height: 0.83;
+			padding: 0 0 1.25rem 0;
+			color: $app-darker-gray;		
+		}
+		p, ul {
+			line-height: 1;
+			font-size:  0.9375rem;
+			color: $app-black;
+			font-family: $font-family-AvertaPE;
+		}
+		@media screen and (max-width: 768px), 
+		screen and (device-width: 812px) and (orientation:landscape) {
+			.container {
+				padding: 0 1.25rem;
+			}
+		}
+	}	
+}

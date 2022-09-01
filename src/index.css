@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'FiraSans';
+  src: local('FiraSans'), url(./fonts/FiraSans-Regular.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'averta_peregular';
+  src:local('averta_peregular'), 
+      url('./assets/fonts/intelligent-foundry-avertape-regular-webfont.woff2') format('woff2'),
+      url('./assets/fonts/Intelligent-Foundry-AvertaPE-Regular.ttf') format('truetype'),
+      url('./assets/fonts/Intelligent\ Foundry\ -\ AvertaPE\ Regular.otf') format('woff')
+      url('./assets/fonts/intelligent-foundry-avertape-regular-webfont.woff') format('woff');      
+  font-weight: normal;
+  font-style: normal;
+
+}
+

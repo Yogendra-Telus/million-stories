@@ -1,0 +1,165 @@
+.btn{
+    text-transform: uppercase;
+    font-size: 0.75rem;   
+    padding: 0.625rem 0.875rem 0.625rem;
+    display: flex;
+    align-items: center;
+    font-family: $font-family-AvertaPE;
+    letter-spacing: 0.075rem;
+    svg{
+        height: 1.25rem; 
+        margin-right: 0.3125rem;
+        position: relative;
+        //top: -0.125rem;
+
+    }
+    @media screen and (max-width:767px){
+        min-width: auto;
+        max-width: 16.625rem;
+    }
+    &.gray-btn{
+        background-color: $app-light-gray;
+        border: 0.25rem solid $app-gray;
+        color: $app-gray;
+        &:hover{
+            background: lighten($app-gray, 70%);
+        }
+        &:active, &:focus{
+            background: $app-gray;
+            color: $app-light-gray;
+        }
+    }
+    &.dark-btn{ 
+        background-color: $app-gray;
+        border: 0.25rem solid $app-light-gray;
+        color: $app-light-gray;
+        &:hover{
+            background: lighten($app-gray, 20%);
+        }
+        &:active, &:focus{
+            background: $app-light-gray;
+            color: $app-gray;
+        }
+    }
+    &.btn-small{
+        padding: 0.375rem 0.75rem;
+        min-width: auto;    
+    }
+    &.disabled{
+        opacity: 0.5;
+    }
+    &.dark-transparent-btn{ 
+        border: 0.125rem solid $app-gray;
+        background: transparent;
+        color: $app-gray;
+    }
+    &.light-transparent-btn{ 
+        border: 0.125rem solid $app-btn-bordercolor;
+        background: $app-btn-green;
+        color: $app-white;
+        cursor: pointer;
+        margin-top: 0.625rem;
+        border-radius: 1.875rem;
+    }
+    span{
+        display: inline-block;
+        margin-right: 0.9375rem;
+        line-height: normal;
+    }
+    &.white-transparent-btn{ 
+        border: 0.03125rem solid $app-white;
+        border-radius: 0.25rem;
+        background: transparent;
+        color: $app-white;
+        cursor: pointer;
+        font: icon;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    
+}
+.btn-width-auto{
+    min-width:auto;
+}
+.width-auto{
+    width:auto !important;
+}
+
+.icon-btn{
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1;    
+}
+.delete-btn-link{
+    background: none;
+    border: 0;
+    outline: 0;
+    float: right;
+    color: $app-newgray;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size:1rem;
+    text-decoration-line: underline;
+    font-family: $font-family-AvertaPE;
+}
+[role='button']:focus {
+    outline: none;
+}
+
+.green-btn{
+    letter-spacing: 1.75px;
+    font-size: 1.0625rem;
+    border: 0;
+    background: $app-btn-green;
+    color: $app-white;
+    font-family: $font-family-AvertaPE;
+    padding: 0;
+    line-height:2.75rem;
+    border-radius: 1.0625rem;
+    border: solid 0.125rem $app-btn-green;
+    width: 14.1875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-btn{
+    border: 0.25rem solid $app-btn-blue;
+    background: $app-btn-blue;
+    color: $app-white;
+    padding: 0 5.625rem;
+    line-height:2.75rem;
+    height:auto;
+    -webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    transition: color 0.1s;
+    span{
+        display: inline-flex;
+        margin-right: 0;
+        &.check-icon{
+            margin-left: 0.625rem;
+        }
+        &:not(:root:root) {
+            position: relative;
+            top: 0.125rem;
+        }
+    }
+    .dark-icon{
+        display: none;            
+    }
+    &:hover, &:active{
+        color: $app-gray !important;
+        .white-icon{
+            display: none;
+        }
+        .dark-icon{
+            display: inline-flex;            
+        }
+    }
+}

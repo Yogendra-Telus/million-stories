@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Icon-playlist_1);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #333;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Icon-playlist_1">
+      <rect width="44" height="44"/>
+    </clipPath>
+  </defs>
+  <g id="Icon-playlist_1" data-name="Icon-playlist – 1" class="cls-1">
+    <rect class="cls-4" width="44" height="44"/>
+    <g id="Playlist_Icon" data-name="Playlist Icon" transform="translate(2.5 1.5)">
+      <path id="Path_102" data-name="Path 102" class="cls-2" d="M215.466,212.059v4.126H184.534v-32.37h4.549" transform="translate(-183.034 -177.315)"/>
+      <rect id="Rectangle_78" data-name="Rectangle 78" class="cls-2" width="30.932" height="32.37" transform="translate(6.5 1.5)"/>
+      <g id="play2" transform="translate(-183.034 -177.315)">
+        <g id="Group_7" data-name="Group 7">
+          <path id="Path_21" data-name="Path 21" class="cls-3" d="M201.916,200.553V190.419l8.212,5.026Z"/>
+          <path id="Path_22" data-name="Path 22" class="cls-3" d="M201.916,190.419l8.212,5.026-8.212,5.108V190.419M200,187v17l2.927-1.821,8.213-5.107,2.636-1.64-2.648-1.62-8.213-5.027L200,187Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

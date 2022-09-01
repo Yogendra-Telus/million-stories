@@ -1,0 +1,499 @@
+.login-modal {
+	.loginbutton {
+		width: auto;
+		background: transparent;
+		color: $app-light-gray;
+		border: 0;
+		min-width: auto;
+		letter-spacing: 1.3px;
+		box-shadow: none;
+		margin-right: 0;
+		text-transform: uppercase;
+		outline: none;
+		height: 2.125rem;
+		line-height: 2rem;
+		// border: 1px solid red;
+		span {
+			font-size: 1rem;
+		}
+		&:hover {
+			color: $app-white;
+			background-color: transparent;
+			border-color: transparent;
+			box-shadow: none;
+		}
+		&.dark-theme {
+			color: $app-darker-gray;
+		}
+		@media screen and (max-width: 767px) {
+			white-space: nowrap;
+		}
+	}
+	// @media screen and (max-width: 767px) {
+	// 	.loginbutton {
+	// 		margin-right: 0.3125rem;
+	// 	}
+	// }
+	// .header-signup-btn{
+	// 	width: 6.625rem;
+	// 	height:  2.125rem;
+	// 	border-radius: 1.0625rem;
+	// 	border: solid 0.125rem $app-btn-bordercolor;
+	// 	background-color: transparent;
+	// 	letter-spacing: 1.2px;
+	// 	color: $app-white;
+	// 	text-transform: uppercase;
+	// 	margin-right: 0.9375rem;
+	// 	&.dark-theme{
+	// 		color: $app-darker-gray;
+	// 		border-color: $app-darker-gray;
+	// 	}
+	// 	&:hover, &:active, &:focus{
+	// 		background: #1686b4; // Need to add this color in variables
+	// 		color: $app-white;
+	// 	}
+	// 	&.flyout-btn{
+	// 		margin-right: 1.375rem;
+	// 	}
+	// 	&.no-border{
+	// 		border: 0;
+	// 		margin: 0;
+	// 		width: auto;
+	// 	}
+	// 	@media screen and (max-width: 768px) {
+	// 		width: 5.375rem;
+	// 		margin-right: 0.625rem;
+	// 	}
+	// }
+}
+
+.modal-login {
+	//width: 41.3125rem !important;
+	.ant-input {
+		padding: 0 1.25rem !important;
+	}
+	p {
+		font-size: 1rem;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.75;
+		letter-spacing: normal;
+		text-align: center;
+		color: $app-black;
+		margin: 0 auto;
+		@media screen and (max-width: 767px) {
+			line-height: 1;
+		}
+	}
+	.modal-body {
+		padding: 0 1rem;
+		.line {
+			height: 1.25rem;
+			width: 0.0625rem;
+			background-color: lightgray;
+		}
+		.m-bottom {
+			margin-bottom: 1.25rem;
+		}
+		.modalwrapper {
+			color: $app-light-gray;
+			.submitbutton {
+				background: $app-dark-gray;
+				border: 0;
+				margin-bottom: 1.25rem;
+				&:hover {
+					border-color: transparent;
+				}
+			}
+			.button-bottom {
+				display: flex;
+				margin-bottom: 1.6875rem;
+			}
+		}
+		.sub-info {
+			color: $app-black !important;
+			margin: 0.3125rem 0;
+			a,
+			strong {
+				text-decoration: underline;
+				font-weight: normal;
+			}
+			.link {
+				color: $app-black !important;
+				cursor: pointer;
+				text-decoration: underline !important;
+			}
+		}
+
+		.password-reliability {
+			width: 100%;
+			background-color: #bde88e;
+			height: 0.625rem;
+			position: relative;
+			margin-top: 0.625rem;
+			.password-reliability-line {
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #7ad123;
+				transition: .25s ease-in-out;
+			}
+		}
+	}
+
+	.login-divider {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		position: relative;
+		flex-direction: column;
+		height: 100%;
+		margin-top: 0.875rem;
+		&:not(:root:root) {
+			margin-top: 0.75rem;
+		}
+		@media screen and (max-width: 767px) {
+			flex-direction: row;
+			justify-content: center;
+			margin-top: 0;
+		}
+		.divide-text {
+			width: 3.125rem;
+			height: 3.125rem;
+			border-radius: 100%;
+			border: 0;
+			color: $app-black;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.875rem;
+			font-family: $font-family-AvertaPEExtraBold;
+		}
+		.divide-line {
+			flex-basis: 7rem;
+			width: 0.0625rem;
+			background-color: $app-gray;
+			@media screen and (max-width: 767px) {
+				height: 0.125rem;
+				flex-basis: 50%;
+			}
+		}
+	}
+	.login-modal-button {
+		border-radius: 0;
+		height: 2.125rem !important;
+		text-align: left;
+		color: $app-white;
+		margin-bottom: 1.875rem;
+		padding: 0 1.25rem !important;
+		width: 100%;
+		white-space: pre-wrap;
+		text-transform: uppercase;
+		font-size: 0.6875rem;
+		border-radius: 1.25rem;
+		&.btn-btm-margin {
+			margin-bottom: 1.0625rem;
+		}
+
+		&:hover {
+			color: $app-white;
+		}
+		&.ant-btn-primary {
+			background: $app-btn-green;
+			border-color: $app-btn-green;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: $font-family-AvertaPESemiBold;
+			border-radius: 1.25rem;
+			height: 2.125rem !important;
+			font-size: 0.875rem;
+		}
+		span {
+			padding: 0 !important;
+			font-weight: normal !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			line-height: normal;
+		}
+	}
+	.social-buttons-wrapper {
+		margin-top: 2.4375rem;
+		font-family: $font-family-AvertaPE;
+		font-weight: normal;
+		text-transform: uppercase;
+		width: 14.25rem;
+		margin: 0 auto;
+		@media screen and (max-width: 767px) {
+			margin-top: 0.9375rem;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			width: 14.25rem;
+			margin: 0 auto;
+			> span {
+				width: 100%;
+			}
+		}
+		i {
+			margin-right: 0.625rem;
+			font-size: 1.25rem;
+		}
+		.facebook {
+			background: #3c5a99;
+			border: #3c5a99;
+			font-size: 0.6875rem;
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 767px) {
+				margin: 0 auto 1.875rem;
+			}
+			svg {
+				color: $app-white;
+				width: 1.25rem;
+				height: 1.5625rem;
+				margin-right: 0.625rem;
+			}
+		}
+		.twitter {
+			background: #00acee;
+			border: #00acee;
+			font-size: 0.6875rem;
+			display: flex;
+			align-items: center;
+			svg {
+				color: $app-white !important;
+				width: 1.25rem;
+				height: 1.5625rem;
+				margin-right: 0.625rem;
+			}
+		}
+		.google {
+			background: #db4437 !important;
+			border: #db4437 !important;
+			text-transform: uppercase !important;
+			color: $app-white !important;
+			font-size: 0.9375rem !important;
+			display: flex !important;
+			align-items: center !important;
+			border-radius: 0 !important;
+			font-family: $font-family-AvertaPE !important;
+			font-size: 0.6875rem !important;
+			border-radius: 1.25rem !important;
+			svg {
+				color: $app-white;
+				width: 1.25rem;
+				height: 1.5625rem;
+				margin-right: 0.625rem;
+			}
+		}
+	}
+	label {
+		color: $app-white;
+	}
+	.login-left-footer {
+		font-family: $font-family-AvertaPE;
+		font-weight: normal;
+		display: flex;
+		flex: 1 1 auto;
+		.signupbutton {
+			color: $app-black !important;
+			font-size: 1rem;
+		}
+		.forgot-modal {
+			text-align: left;
+			width: auto;
+			.forgotbutton {
+				color: $app-black !important;
+				font-size: 1rem;
+				text-decoration: none;
+				padding-left: 0.625rem;
+				cursor: pointer;
+			}
+		}
+	}
+	.forgot-modal {
+		width: 100%;
+		text-align: right;
+		.forgotbutton {
+			color: #b2b2b2 !important;
+		}
+	}
+	.ant-checkbox-inner {
+		width: 1.5625rem;
+		height: 1.5625rem;
+		border-radius: 0.3125rem;
+		border: solid 0.0625rem #e3e8f0;
+		background-color: #f0f3f7;
+	}
+	.ant-checkbox-checked {
+		background: url('../../components/common/Icons/checkMark.png');
+		background-size: cover;
+		.ant-checkbox-inner {
+			background-color: transparent;
+		}
+	}
+}
+.change-password {
+	.modal-body {
+		padding: 0;
+	}
+	.ant-modal-body {
+		padding: 2.25rem 4rem 0;
+	}
+}
+.validation {
+	font-family: $font-family-AvertaPE;
+	font-weight: normal;
+	.validation-chek {
+		.validation-condition {
+			margin: 0.625rem 0;
+			align-items: center;
+			display: flex;
+			position: relative;
+			padding-left: 2.125rem;
+			height: 1.6875rem;
+			svg {
+				margin-right: 0.625rem;
+				width: 1.5625rem;
+				height: 1.5625rem;
+				color: #fff;
+
+				//margin-top: 0.1875rem;
+			}
+			.ant-checkbox-inner {
+				position: absolute;
+				width: 1.5625rem;
+				height: 1.5625rem;
+				border-radius: 0.3125rem;
+				border: solid 0.0625rem #e3e8f0;
+				background-color: #f0f3f7;
+			}
+		}
+		&.checked {
+			.validation-condition {
+				padding-left: 0;
+			}
+			.ant-checkbox-inner {
+				display: none;
+			}
+		}
+	}
+}
+
+.width-42 {
+	width: 42%;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
+.width-48 {
+	width: 47%;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
+.width-15 {
+	width: 15%;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
+
+.modal-forgot {
+	.ant-form-item {
+		margin-bottom: 1.25rem !important;
+	}
+	.login-modal-button {
+		margin-bottom: 1.0625rem !important;
+		span {
+			&:not(:root:root) {
+				top: 0.125rem;
+				position: relative;
+			}
+		}
+	}
+}
+.singup-sec {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	.ant-btn-primary {
+		width: 6.625rem;
+	}
+	@media screen and (max-width: 767px) {
+		.login-modal-button.ant-btn-primary {
+			margin: 1.0625rem auto;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		margin-right: 0 !important;
+	}
+}
+.singup-modal .signup-subheading {
+	font-size: 1.25rem;
+	line-height: normal;
+}
+
+.singup-modal {
+	.ant-modal-header .ant-modal-title {
+		@media screen and (max-width: 767px) {
+			padding-top: 6.25rem;
+		}
+	}
+	.modal-body {
+		padding: 1rem 0;
+		.field-container div {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		.ant-col-xl-12{
+			height: 92px;
+		}
+
+	}
+	.modal-bottom-button {
+		button {
+			margin: 0 auto 0.625rem;
+			width: auto;
+		}
+		p {
+			text-align: center;
+			font-size: 1rem;
+		}
+	}
+}
+.modal-login {
+	.ant-modal-header .ant-modal-title {
+		@media screen and (max-width: 767px) {
+			padding-top: 6.25rem;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.login-button-sec {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		button {
+			width: 100%;
+			max-width: 7.5rem;
+			margin-top: 1rem;
+		}
+	}
+	.ant-row.login-links {
+		float: right;
+		margin-top: -0.625rem !important;
+		text-align: right;
+	}
+}
+
+.social-col {
+	margin: 2.25rem 0 0;
+}

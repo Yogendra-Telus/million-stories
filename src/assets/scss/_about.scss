@@ -1,0 +1,28 @@
+.about-sec{
+	padding: 2.5rem 0 !important;
+
+	blockquote {
+		padding: 15px 0;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 450px;
+	}
+	a, div{
+		display: inline-block;
+	}
+	a{
+		color: #2C99BA;
+		font-weight: 600;
+	}
+	.social-link{
+		font-weight: normal;
+		display: inline;
+	}
+}
+.partnerwrapper .partner-content-wrapper .partner-container .about-sec p{
+	@media screen and (max-width: 768px), screen and (device-width: 812px) and (orientation: landscape){
+		margin: 0 0 10px !important;
+		display: block;
+	}
+}

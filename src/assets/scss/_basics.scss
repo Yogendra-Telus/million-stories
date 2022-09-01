@@ -1,0 +1,172 @@
+.share-link {
+	border-bottom: 0.125rem solid transparent;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	box-sizing: border-box;
+	position: relative;
+
+	.custom-tooltip {
+		position: absolute;
+		left: 6.875rem;
+		top: 0.125rem;
+		border: 0;
+	}
+
+	span {
+		font-weight: bold;
+		padding: 0.625rem;
+		display: flex;
+		border-bottom: 0.0625rem solid lightgray;
+		align-items: center;
+		color: $app-black;
+
+		i {
+			font-size: 1.5rem;
+			margin-right: 0.625rem;
+		}
+
+		&.no-border {
+			border-bottom: 0.0625rem solid transparent;
+		}
+	}
+
+	&:hover {
+		color: $app-main-blue;
+		border-bottom: 0.125rem solid $app-main-blue;
+	}
+}
+
+.playlists {
+	max-height: 18.75rem;
+	overflow-y: scroll;
+}
+
+.playlist {
+	border-bottom: 0.0625rem solid lightgray;
+	padding: 0.625rem;
+
+	&::-webkit-scrollbar {
+		width: 0.625rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $app-light-gray;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #888;
+	}
+
+	&:-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		font-size: 0.875rem;
+
+		i {
+			font-size: 1.5rem;
+			transition: 0.2s ease-in-out;
+			margin-right: 0.625rem;
+			color: $app-blue;
+			cursor: pointer;
+
+			&:hover {
+				color: $app-blue;
+			}
+		}
+	}
+
+	&.title {
+		color: $app-white;
+		text-transform: uppercase;
+	}
+}
+
+.playlist-container {
+	overflow-y: scroll;
+	height: 9.375rem;
+}
+
+.create-new {
+	position: relative;
+	font-weight: normal;
+	cursor: pointer;
+	max-width: 13.5rem;
+	svg {
+		color: #fff;
+		width: 1.25rem !important;
+		height: 1.25rem !important;
+	}
+	span {
+		margin-right: 0;
+		&:not(:root:root) {
+			position: relative;
+			top: 0.125rem;			
+		}
+	}
+}
+
+label {
+	font-weight: bold;
+	font-size: 0.75rem;
+	margin: 0;
+}
+
+.ant-form-item-label {
+	line-height: 0.625rem !important;
+}
+@media (max-width: 575px) {
+	.ant-form-item-label {
+		padding: 0;
+	}
+}
+.ant-form-item-label label:after {
+	display: none;
+}
+
+.ant-form-item {
+	margin: 0.625rem 0 !important;
+}
+
+.blue {
+	color: $app-btn-blue;
+}
+
+.green {
+	color: #7ad123;
+}
+
+.row-checkbox {
+	.ant-checkbox-group {
+		width: 100%;
+		justify-content: space-between;
+		display: flex;
+	}
+}
+
+.dark-theme {
+	label {
+		color: #d3dbce;
+	}
+
+	small {
+		color: #d3dbce !important;
+	}
+}
+
+.jw-error {
+	min-height: 94vh !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.ant-form-explain{
+	font-family: $font-family-AvertaPE;
+} 

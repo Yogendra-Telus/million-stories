@@ -1,0 +1,375 @@
+.width-400 {
+	width: 100%;
+	max-width: 25rem;
+	@media screen and (max-width: 767px) {
+		max-width: 20rem;
+	}
+}
+.ant-modal-body {
+	font-size: 0.8125rem;
+	color: $app-black;
+}
+.custom-modal {
+	width: 98% !important;
+	max-width: 41.3125rem !important;
+	&.small-size {
+		max-width: 25rem !important;
+		width: 98%;
+		margin: 0 auto;
+		@media screen and (max-width: 767px) {
+			max-width: 18.75rem !important;
+		}
+	}
+	.ant-modal-header {
+		border-radius: 0;
+		background: $app-white;
+		border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+		.ant-modal-title {
+			color: $app-black;
+			font-size: 3.75rem;
+			//text-transform: capitalize;
+			text-align: center;
+			padding-top: 0.625rem;
+			line-height: 1;
+			font-family: $font-family-AvertaPEBlack;
+			@media screen and (max-width: 767px) {
+				font-size: 1.875rem;
+			}
+		}
+	}
+	.ant-modal-body {
+		font-family: $font-family-AvertaPE;
+		font-weight: normal;
+		background: $app-white;
+		padding: 0 2.25rem 2.375rem;
+		@media screen and (max-width: 767px) {
+			padding: 2.25rem 2.8125rem;
+		}
+
+		.contact-input{
+			height: 5.75rem;
+			&.msg-input{
+				height: auto;
+			}
+		}
+
+		.ant-form-item-label label {
+			font-family: $font-family-AvertaPESemiBold;
+			color: #a1a8bd;
+			font-size: 0.75rem;
+			letter-spacing: 0.075rem;
+			line-height: normal;
+			font-weight: 800;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			padding-bottom: 0.5625rem;
+			&:after {
+				margin-bottom: 0;
+				display: none;
+			}
+		}
+		.ant-checkbox-wrapper {
+			font-family: $font-family-AvertaPE;
+			font-weight: normal;
+		}
+		.checkbox-label span{
+			font-size: 0.75rem;
+		}
+
+		.ant-input {
+			background: #f0f3f7;
+			font-size: 0.875rem;
+			color: $app-black !important;
+			height: 2.75rem;
+			font-family: $font-family-AvertaPESemiBold;
+			font-weight: normal;
+			border: 0.0625rem solid #e3e8f0;
+			border-radius:  0.3125rem;
+			&::placeholder {
+				color: #b9bfd3;
+			}
+		}
+		.forgot-modal .forgotbutton {
+			color: $app-black !important;
+			text-decoration: underline;
+			font-size: 1.0625rem;
+			cursor: pointer;
+		}
+	}
+	.ant-modal-footer {
+		border-radius: 0;
+		//background: $app-darker-gray;
+		border-top: 0;
+		//padding-bottom: 2.5rem;
+		div {
+			display: flex;
+			flex-direction: column-reverse;
+			//padding: 0 3.93rem;
+
+			button {
+				font-size: 0.875rem;
+				background: none;
+				text-decoration: underline;
+				border: 0;
+				color: $app-white;
+				border-radius: 0;
+				height: 2.75rem;
+				background: $app-gray;
+				font-family: $font-family-AvertaPE;
+				text-transform: uppercase;
+
+				&.ant-btn-primary {
+					display: block;
+					align-items: center;
+					text-align: center;
+					margin: 1.25rem auto;
+					border: 0;
+					background: $app-btn-green;
+					font-size: 0.875rem;
+					color: $app-white;
+					height: 2.75rem;
+					width: 15.25rem;
+					padding: 0;
+					text-transform: uppercase;
+					font-family: $font-family-AvertaPEExtraBold;
+				}
+			}
+		}
+	}
+
+	&.gray-modal {
+		.ant-modal-body {
+			padding: 0 1.5rem;
+			// background: $app-light-gray;
+		}
+		.modal-list-wrapper {
+			height: ‭15.625rem;
+			overflow: auto;
+			padding: 0 !important;
+			background: none !important;
+		}
+		.playlist-container {
+			background: none !important;
+			border-top: 0.0625rem solid $app-light-gray;
+			padding: 0.625rem 0 !important;
+			overflow: hidden;
+			height: 4.375rem;
+			margin-right: 0.625rem !important;
+		}
+		.ant-modal-footer {
+			display: flex;
+			// position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 0;
+			div {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				flex-direction: row;
+				align-items: center;
+				padding: 0;
+				> * {
+					width: 50% !important;
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+			}
+		}
+	}
+}
+.edit-accInfo-modal {
+	.ant-modal-body {
+		padding: 0 5rem 0;
+		.modal-body {
+			padding: 0;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 1.625rem 2rem 0;
+		}
+	}
+}
+.edit-accInfo-modal,
+.custom-modal.change-password {
+	.ant-modal-body  {
+		@media screen and (max-width: 767px) {
+			padding: 2.25rem 2rem !important;			
+		}
+	}
+	.ant-modal-footer div button {
+		background: transparent !important;
+		color: $app-black !important;
+		&.ant-btn-primary {
+			background: $app-btn-green !important;
+			color: $app-white !important;
+			border-radius: 1.875rem;
+		}
+	}
+}
+.subtitle-container label {
+	color: $app-newgray;
+	font-size: 1rem;
+	margin-bottom: 0.1875rem;
+}
+
+.edit-modal-list {
+	display: flex;
+	.image_wrapper {
+		width: 25%;
+		img {
+			width: 100%;
+			position: relative;
+		}
+	}
+	.content_wrapper {
+		width: 72%;
+		padding: 0 0.625rem;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: flex-start;
+		h4 {
+			color: $app-black;
+			font-size: 1rem;
+			word-break: break-word;
+		}
+	}
+}
+
+.ant-modal-confirm-confirm {
+	.ant-modal-body {
+		padding: 0;
+		.ant-modal-confirm-body {
+			padding: 1.5rem;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			.ant-modal-confirm-title {
+				color: $app-black;
+			}
+			.ant-modal-confirm-content {
+				margin-left: 0;
+			}
+		}
+	}
+	.ant-modal-confirm-btns {
+		float: none;
+		.ant-btn {
+			width: 50%;
+			float: left;
+			font-size: 1.0625rem;
+			background: $app-gray;
+			text-decoration: underline;
+			border: 0;
+			color: $app-light-gray;
+			border-radius: 0;
+			height: 2.75rem;
+			font-family: $font-family-AvertaPEBlack;
+			&.ant-btn-primary {
+				display: block;
+				align-items: center;
+				text-align: center;
+				border: 0;
+				background: $app-btn-green;
+				font-size: 0.875rem;
+				color: $app-white;
+				height: 2.75rem;
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+}
+.add-modal .ant-modal-body {
+	padding-bottom: 1.5rem !important;
+}
+
+// .edit-playlist.custom-modal .ant-modal-footer div button {
+// 		color: $app-white !important;
+// 		background: #333 !important;
+// 		&.ant-btn-primary {
+// 			background: $app-btn-green !important;
+// 		}
+// 	}
+.edit-playlist {
+	.modal-list-wrapper {
+		max-height: 18.75rem;
+		overflow: scroll;
+		&::-webkit-scrollbar {
+			width: 0.1875rem;
+			margin-left: 0.3125rem;
+		}
+		&::-webkit-scrollbar-track {
+			background: #6d6b60;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: $app-gray;
+		}
+	}
+}
+
+.ant-modal-close-x {
+	display: block;
+	width: 2.25rem;
+	height: 2.25rem;
+	font-size: 1.5625rem;
+	font-style: normal;
+	line-height: 0.875rem;
+	text-align: center;
+	text-transform: none;
+	text-rendering: auto;
+	padding-top: 0.9375rem;
+	padding-right: 0.9375rem;
+	svg {
+		color: $app-gray;
+	}
+}
+.ant-checkbox + span {
+	color: #a1a8bd;
+	font-family: $font-family-AvertaPEExtraBold;
+}
+textarea.ant-input {
+	height: auto !important;
+}
+.bar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.coloured-border {
+		background: $app-darker-gray url('../images/coloured-border.png') no-repeat 0 0;
+		display: flex;
+		background-size: 100% 0.3125rem;
+		height: 0.3125rem;
+		left: 0;
+		width: 100%;
+		margin-top: 1.25rem;
+	}
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+.contact-modal {
+	.ant-modal-header .ant-modal-title {
+		@media screen and (max-width: 767px) {
+			padding-top: 6.25rem;
+		}
+	}	
+}
+.contact-button {
+	p {
+		text-align: center;
+		font-size: 1rem;
+	}
+}
+
+.contact-input {
+	padding: 8px;
+}
+.popup-logo-sec {
+	@media screen and (max-width: 767px) {
+		position: absolute;
+		top: 0.9375rem;
+		display: block;
+		left: 1.125rem;
+	}
+	display: none;
+}

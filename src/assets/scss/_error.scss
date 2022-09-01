@@ -1,0 +1,17 @@
+
+.error-page{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    details {
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: #666;
+        line-height: 1.25rem;
+        border: 0.0625rem solid #666;
+        padding: 0.9375rem ;
+    }
+}

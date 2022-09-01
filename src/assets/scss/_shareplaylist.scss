@@ -1,0 +1,174 @@
+.shareplaylist-page {
+  height: auto;
+  width: 100%;
+  background-color: $app-light-gray;
+  padding-top: 112px;
+
+  .header-section {
+    background-size: cover;
+    overflow: hidden;
+    height: 488px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &:before{
+      background: $app-black;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    @media screen and (max-width: 767px) {
+      height: auto;
+      padding: 100px 0;
+		}
+
+    .data-wrapper {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 9;
+
+      .heading-buttons-wrapper {
+        display: flex;
+        align-items: center;
+          @media screen and (max-width: 1024px) {          
+          flex-direction: column;   
+          display: block;       
+          }
+
+        .heading {
+          color: $app-white;          
+          margin: 0 1.25rem 0 0;
+          font-weight: normal;
+          padding: 0;
+          font-size: 3rem;
+          max-width: 60%;
+          text-transform: uppercase;
+          @media screen and (max-width: 1024px) {
+						max-width: 100%;
+					}
+        }
+
+        .button-wrapper {
+          flex-direction: row;
+          display: flex;
+          @media screen and (max-width: 767px) {
+						display: block;
+					}
+          .btn.light-transparent-btn{
+            padding: 10px 20px 10px;  
+            &:last-child{
+              min-width: auto;
+              margin-left: 1.25rem;
+              @media screen and (max-width: 767px) {
+                margin-left: 0;
+              }
+            }
+            @media screen and (max-width: 767px){            
+              max-width: none;
+              margin-left: 0;
+            }
+          }
+        }
+      }      
+    }
+
+    .content {
+      color: $app-light-gray;
+      width: 60%;
+      margin: 2.5rem 0;
+        @media screen and (max-width: 767px){            
+          width: 100%;        
+        }
+
+      p {
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0;
+        font-family: $font-family-AvertaPE;
+        line-height: 1.35;
+      }
+    }
+
+    
+  }
+  
+  .shareplaylist-content {
+    width: 80rem;
+    margin: 0 auto;
+    @media screen and (max-width: 1024px) {
+      width: 98%;
+  }
+    .shareplaylist-wrapper {
+      display: flex;
+      flex-wrap: wrap;      
+      background:$app-light-gray; 
+      margin: 2.5rem;
+      justify-content: flex-start !important;
+      align-items: flex-start;
+      flex-direction: row;
+      
+      @media screen and (max-width: 1024px) {
+        margin: 20px;
+      }
+      &.custom-card-container {
+        .card-item{
+          width:auto;
+          
+        }       
+          
+      }
+      .video-image-wrapper {
+        width: 100%;
+        height: 13.75rem;
+        overflow: hidden;
+        position: relative;
+        background: $app-black;
+        // &:before{
+        //   background: $app-black;
+        //   content: "";
+        //   position: absolute;
+        //   left: 0;
+        //   right: 0;
+        //   top: 0;
+        //   bottom: 0;
+        //   z-index: 1;
+        // }
+        
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -1.875rem;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 9;
+        }
+        &:hover {    
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .load-more-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 3.125rem 0;     
+
+        i {
+          margin-right: 0.625rem;
+        }
+      
+    }
+  }
+}

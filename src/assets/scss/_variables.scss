@@ -1,0 +1,116 @@
+// // font - Questrial
+// @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+// // font - Archivo Black
+// @import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+// // font - Archivo
+// @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+
+@font-face {
+  font-family: AvertaPERegular;
+  font-style: normal;
+  src: url('../fonts/AvertaPERegular.ttf'); /* IE6-IE8 */
+  src: local('AvertaPE'), local('AvertaPE'),
+       url('../fonts/AvertaPERegular.otf') format('otf'), /* IE6-IE8 */
+       url('../fonts/AvertaPERegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvertaPERegular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvertaPERegular.eot') format('eot'), /* Safari, Android, iOS */
+       url('../fonts/AvertaPERegular.svg') format('svg'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: AvertaPEBold;
+  font-style: normal;
+  src: url('../fonts/AvertaPEBold.ttf'); /* IE6-IE8 */
+  src: local('AvertaPEBold'), local('AvertaPEBold'),
+       url('../fonts/AvertaPEBold.otf') format('otf'), /* IE6-IE8 */
+       url('../fonts/AvertaPEBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvertaPEBold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvertaPEBold.eot') format('eot'), /* Safari, Android, iOS */
+       url('../fonts/AvertaPEBold.svg') format('svg'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: AvertaPEBlack;
+  font-style: normal;
+  src: url('../fonts/AvertaPEBlack.ttf'); /* IE6-IE8 */
+  src: local('AvertaPEBlack'), local('AvertaPEBlack'),
+       url('../fonts/AvertaPEBlack.otf') format('otf'), /* IE6-IE8 */
+       url('../fonts/AvertaPEBlack.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvertaPEBlack.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvertaPEBlack.eot') format('eot'), /* Safari, Android, iOS */
+       url('../fonts/AvertaPEBlack.svg') format('svg'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: AvertaPESemiBold;
+  font-style: normal;
+  src: url('../fonts/AvertaPESemiBold.ttf'); /* IE6-IE8 */
+  src: local('AvertaPESemiBold'), local('AvertaPESemiBold'),
+       url('../fonts/AvertaPESemiBold.otf') format('otf'), /* IE6-IE8 */
+       url('../fonts/AvertaPESemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvertaPESemiBold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvertaPESemiBold.eot') format('eot'), /* Safari, Android, iOS */
+       //url('../fonts/AvertaPESemiBold.svg') format('svg'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: AvertaPEExtraBold;
+  font-style: normal;
+  src: url('../fonts/AvertaPEExtraBold.ttf'); /* IE6-IE8 */
+  src: local('AvertaPEExtraBold'), local('AvertaPESemiBold'),
+       url('../fonts/AvertaPEExtraBold.otf') format('otf'), /* IE6-IE8 */
+       url('../fonts/AvertaPEExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvertaPEExtraBold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvertaPEExtraBold.eot') format('eot'), /* Safari, Android, iOS */
+       //url('../fonts/AvertaPESemiBold.svg') format('svg'), /* Safari, Android, iOS */
+}
+
+//Primary Color 
+$app-yellow: #FCD206;
+$app-gray: #333333;
+$app-green: #141C1C;
+$app-white: #ffffff;
+$app-black: #000000;
+//mew color
+$app-main-blue: #10a2dd; 
+$app-btn-blue: #10a1de; 
+$app-btn-green: #20a885; 
+$app-new-gray: #898989;
+$app-lightnew-gray: #EDEDED;
+$app-newgray: #707070;
+$app-light-green: #d3dbce;
+$app-btn-bordercolor: #e4e7ef;
+
+//Secondary Colors
+$app-blue: #00BAAC; 
+$app-light-gray: #F1F1F1;  
+$app-dark-gray: #6D6B60;
+$app-darker-gray: #1A1A1A;
+$app-lighter-gray: #f6f6f6;
+
+
+
+$theme-colors: (
+  "gray-light-theme": $app-light-gray,
+  "dark-theme": $app-gray,
+  "gray-theme": $app-dark-gray
+);
+
+// Typography 
+// $font-family-questrial: 'Questrial', sans-serif;
+// $font-family-archivo-black: 'Archivo Black', sans-serif;
+// $font-family-archivo: 'Archivo', sans-serif;
+
+$font-family-AvertaPEBold: AvertaPEBold, sans-serif;
+$font-family-AvertaPEBlack: AvertaPEBlack, sans-serif;
+$font-family-AvertaPE: AvertaPERegular, sans-serif;
+$font-family-AvertaPESemiBold: AvertaPESemiBold, sans-serif;
+$font-family-AvertaPEExtraBold: AvertaPEExtraBold, sans-serif;
+
+$font-family-sans-serif: $font-family-AvertaPE;
+$headings-font-family: $font-family-AvertaPEBlack;
+$input-btn-font-family: $font-family-AvertaPEBlack;
+
+$btn-border-radius: 0;
+$font-weight:900
+  

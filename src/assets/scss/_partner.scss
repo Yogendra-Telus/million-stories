@@ -1,0 +1,222 @@
+.partner-container {
+	position: relative;
+}
+
+.ant-modal.partner-modal {
+	width: 50rem !important;
+	@media screen and (min-width: 768px) and (max-width: 800px) {
+		width: 92% !important;
+		max-width: 92% !important;
+	}
+	@media screen and (max-width: 767px) {
+		width: 94% !important;
+		max-width: 100% !important;
+	}
+	.ant-modal-content {
+		box-shadow: -0.9375rem 1.4375rem 1.5625rem rgba(0, 0, 0, 0.2);
+	}
+	.ant-modal-close-x {
+		padding-right: 2.625rem;
+	}
+	.ant-modal-header {
+		padding: 2.5rem 3.125rem 0 !important;
+		border-bottom: 0;
+		background: $app-white;
+		.ant-modal-title {
+			color: $app-black;
+			font-family: $font-family-AvertaPEBlack;
+			font-size: 1.8125rem;
+			line-height: 0.97;
+		}
+	}
+	.ant-modal-body {
+		padding: 1.875rem 3.125rem 4.375rem !important;
+		background: $app-white;
+		border-radius: 0 0 0.25rem 0.25rem;
+		background: url('../images/coloured-border.png') no-repeat bottom left;
+		background-size: 100% 0.3125rem;
+	}
+}
+
+.partner-header {
+	color: $app-black;
+	padding-top: 6.6875rem;
+	h4 {
+		display: none;
+	}
+	p {
+		font-family: $font-family-AvertaPEBlack;
+		text-align: center;
+		font-size: 2.5rem;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 3.75rem;
+		span {
+			font-family: $font-family-AvertaPE;
+			text-align: center;
+			font-size: 1.125rem;
+			line-height: 1;
+			text-align: center;
+			display: block;
+			margin-top: 0.9375rem;
+		}
+	}
+	@media screen and (max-width: 768px), screen and (device-width: 812px) and (orientation: landscape) {
+		padding-top: 7.75rem;
+		// h4 {
+		// 	display: block;
+		// 	font-family: $font-family-AvertaPEBlack;
+		// 	font-size: 2.25rem;
+		// 	line-height: 1;
+		// 	color: $app-black;
+		// 	text-align: center;
+		// 	margin-bottom: 0.625rem;
+		// }
+		// p {
+		// 	margin-top: 0;
+		// 	margin-bottom: 0;
+		// 	font-family: $font-family-AvertaPE;
+		// 	span {
+		// 		font-family: $font-family-AvertaPE;
+		// 		text-align: center;
+		// 		font-size: 18px;
+		// 		line-height: 1;
+		// 		text-align: center;
+		// 		display: block;
+		// 		margin-top: 15px;
+		// 	}
+		// }
+	}
+}
+
+.partner-grid {
+	padding: 0 0rem 12rem 0rem;
+	max-width: 80rem;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (max-width: 768px), screen and (device-width: 812px) and (orientation: landscape) {
+		.logo_box {
+			width: 100%;
+			transition: none;
+			padding: 0.5rem;
+			&:hover {
+				transform: none;
+			}
+		}
+		.partner-header {
+			padding: 7rem 2rem 3rem 2rem;
+		}
+	}
+}
+
+.logo_box {
+	display: flex;
+	width: 33%;
+	padding: 2rem;
+	align-items: center;
+	justify-content: center;
+	transition: transform .2s;
+	height: 12.5rem;
+	cursor: pointer;
+	position: relative;
+	z-index: 99;
+
+	img {
+		position: relative;
+		max-width: 90%;
+		//width: 90%;
+		margin: 0 auto;
+		max-height: 10rem;
+		&.logo-white {
+			// -webkit-filter: grayscale(1);
+			// filter: grayscale(1) brightness(1) invert(0);
+			// opacity: 0.5;
+		}
+	}
+	.logo-color {
+		display: none;
+	}
+	&:hover {
+		transform: scale(1.1);
+		background: $app-white;
+		overflow: hidden;
+		z-index: 999;
+		.logo-color {
+			display: block;
+			opacity: 1;
+		}
+		.logo-white {
+			display: none;
+		}
+	}
+}
+
+.ant-modal-content {
+	svg {
+		color: $app-newgray;
+	}
+}
+
+.partner-title-container {
+	text-transform: uppercase;
+}
+
+.partner-detail-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.partner-description-container {
+	font-family: $font-family-AvertaPE;
+	font-size: 1rem;
+	line-height: 1.06;
+	color: $app-black;
+	a {
+		font-family: $font-family-AvertaPEBlack;
+		font-size: 1rem;
+		line-height: 1.06;
+		color: $app-black;
+		display: block;
+		margin-top: 1.125rem;
+		text-transform: lowercase;
+	}
+}
+
+.create-modal {
+	.ant-modal-content .ant-modal-body {
+		padding: 1rem 1.5rem !important;
+	}
+	.ant-btn:first-child {
+		background: $app-gray !important;
+	}
+}
+
+.about-sec {
+	h4 {
+		padding: 2.5rem 0 !important;
+	}
+	blockquote {
+		padding: 15px 0;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 450px;
+	}
+	a,
+	div {
+		display: inline-block;
+	}
+	a {
+		color: #2c99ba;
+		font-weight: 600;
+	}
+	.social-link {
+		font-weight: normal;
+	}
+}
+.partnerwrapper .partner-content-wrapper .partner-container .about-sec p {
+	@media screen and (max-width: 768px), screen and (device-width: 812px) and (orientation: landscape) {
+		margin: 0 !important;
+	}
+}
